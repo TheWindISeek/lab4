@@ -16,7 +16,12 @@ namespace lab4
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //输入联系人的信息 显示联系人的信息
+            Application.Run(new AddressForm());
+            //读取时间 并 显示
+            Application.Run(new TimeForm());
+            //银行账户读写
+            Application.Run(new AccountForm());
         }
     }
 }
